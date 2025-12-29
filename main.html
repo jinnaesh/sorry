@@ -57,33 +57,7 @@ p{font-size:17px;line-height:1.7;}
 }
 </style>
 </head>
-<div id="tapOverlay">
-    Tap to play music 🎧
-</div>
 
-<style>
-#tapOverlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.6);
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:20px;
-    z-index:9999;
-}
-</style>
-
-<script>
-const music = document.getElementById("bgm");
-music.volume = 0.4; // 40%
-
-document.getElementById("tapOverlay").addEventListener("click", () => {
-    music.play();
-    document.getElementById("tapOverlay").style.display = "none";
-});
-</script>
 <body>
 
 <div class="bg"></div>
