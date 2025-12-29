@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Emaya</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{overflow:hidden;}
+.bg{
+    position:fixed;
+    inset:0;
+    background:url("bg.jpg") center/cover no-repeat;
+    filter:blur(8px);
+    transform:scale(1.1);
+    z-index:-2;
+}
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card{
+    background:rgba(255,255,255,0.18);
+    padding:36px 28px;
+    border-radius:18px;
+    text-align:center;
+    color:white;
+    max-width:380px;
+}
+h1{font-size:42px;margin-bottom:10px;}
+.cry{font-size:46px;margin:10px 0;}
+p{font-size:17px;line-height:1.7;}
+.footer{margin-top:18px;font-size:14px;opacity:0.8;}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<div class="container">
+<div class="card">
+<h1>Sorry Emaya</h1>
+<div class="cry">😭</div>
+<p>
+yrrr bahut jyada regret feel kraa.<br>
+kasam se bahut hurt hua tene jb bola<br><br>
+stay away from me, mana tu shi he teri taraf se prr yrr
+</p>
+<div class="footer">— miss you yrr</div>
+</div>
+</div>
+
+</body>
+</html>
