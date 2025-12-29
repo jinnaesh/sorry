@@ -48,9 +48,14 @@ p{font-size:17px;line-height:1.7;}
 <div class="bg"></div>
 <div class="overlay"></div>
 
-<audio autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+<audio id="bgm" autoplay loop>
+    <source src="sad.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  const music = document.getElementById("bgm");
+  music.volume = 0.4; // 🔊 40% volume
+</script>
 
 <div class="container">
 <div class="card">
