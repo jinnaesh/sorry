@@ -3,109 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sorry Emaya</title>
+<title>Sorry</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', Arial, sans-serif;
-}
-
-body{
-    height:100vh;
-    overflow:hidden;
-}
-
-/* Background image layer */
+body{margin:0; overflow:hidden; font-family:'Segoe UI',Arial,sans-serif;}
 .bg{
     position:fixed;
     inset:0;
-    background:url("bg.jpg") center/cover no-repeat;
-    filter:blur(8px);          /* 👈 approx 30% blur */
-    transform:scale(1.1);     /* blur edges fix */
+    background:url("bg1.jpg") center/cover no-repeat;
+    filter:blur(6px);
+    transform:scale(1.1);
     z-index:-2;
 }
-
-/* Dark overlay */
 .overlay{
     position:fixed;
     inset:0;
     background:rgba(0,0,0,0.45);
     z-index:-1;
 }
-
 .container{
     height:100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
-}
-
-.card{
-    background:rgba(255,255,255,0.18);
-    padding:36px 28px;
-    border-radius:18px;
-    text-align:center;
     color:white;
-    max-width:380px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.45);
-    animation:fadeIn 1.6s ease;
+    text-align:center;
 }
-
 h1{
-    font-size:42px;
-    margin-bottom:8px;
-    letter-spacing:1px;
+    font-size:48px;
+    opacity:0;
+    animation:fadeIn 1.5s forwards;
 }
-
-.cry{
-    font-size:46px;
-    margin:10px 0 14px;
+.btn{
+    margin-top:30px;
+    padding:14px 30px;
+    border:2px solid white;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    opacity:0;
+    animation:fadeIn 1s forwards;
+    animation-delay:2s;
 }
-
-p{
-    font-size:17px;
-    line-height:1.7;
-}
-
-.footer{
-    margin-top:18px;
-    font-size:14px;
-    opacity:0.8;
-}
+.btn:hover{background:white; color:black;}
 
 @keyframes fadeIn{
-    from{opacity:0; transform:translateY(18px);}
+    from{opacity:0; transform:translateY(20px);}
     to{opacity:1; transform:translateY(0);}
 }
 </style>
 </head>
 
 <body>
-
-<!-- background layers -->
 <div class="bg"></div>
 <div class="overlay"></div>
 
 <div class="container">
-    <div class="card">
-        <h1>Sorry Emaya</h1>
-        <div class="cry">😭</div>
-
-        <p>
-            yrrr bahut jyada regret feel kraa.<br>
-            kasam se bahut hurt hua tene jb bola<br><br>
-            stay away from me, mana tu shi he teri taraf se prr koi ni choro
-            16 jan tk rkhunga active ac tb tk kuch ho jayee to acha
-            nito delete kraa permanently fir nhi krunga preshan
-            haa vo stay away from me jo bhi tha vo.
-        </p>
-
-        <div class="footer">— merko smj ni aaya kya likhu to mn me aaya likh dia</div>
+    <h1>sorry yrr 😭</h1>
+    <div class="btn" onclick="location.href='main.html'">
+        Click Here
     </div>
 </div>
-
 </body>
 </html>
