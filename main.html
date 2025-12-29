@@ -40,6 +40,21 @@ h1{font-size:42px;margin-bottom:10px;}
 .cry{font-size:46px;margin:10px 0;}
 p{font-size:17px;line-height:1.7;}
 .footer{margin-top:18px;font-size:14px;opacity:0.8;}
+.page{
+    opacity:0;
+    animation:pageEnter 1.2s ease forwards;
+}
+
+@keyframes pageEnter{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 </style>
 </head>
 
@@ -57,7 +72,7 @@ p{font-size:17px;line-height:1.7;}
   music.volume = 0.4; // 🔊 40% volume
 </script>
 
-<div class="container">
+<div class="container page">
 <div class="card">
 <h1>Sorry Emaya</h1>
 <div class="cry">😭</div>
