@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Emaya</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+}
+
+/* Background image layer */
+.bg{
+    position:fixed;
+    inset:0;
+    background:url("bg.jpg") center/cover no-repeat;
+    filter:blur(8px);          /* 👈 approx 40% blur */
+    transform:scale(1.1);     /* blur edges fix */
+    z-index:-2;
+}
+
+/* Dark overlay */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:rgba(255,255,255,0.18);
+    padding:36px 28px;
+    border-radius:18px;
+    text-align:center;
+    color:white;
+    max-width:380px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.45);
+    animation:fadeIn 1.6s ease;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:8px;
+    letter-spacing:1px;
+}
+
+.cry{
+    font-size:46px;
+    margin:10px 0 14px;
+}
+
+p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+.footer{
+    margin-top:18px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(18px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- background layers -->
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Sorry Emaya</h1>
+        <div class="cry">😭</div>
+
+        <p>
+            yrrr bahut jyada regret feel kraa.<br>
+            kasam se bahut hurt hua tene jb bola<br><br>
+            stay away from me, mana tu shi he teri taraf se prr koi ni choro
+            16 jan tk rkhunga active ac tb tk kuch ho jayee to acha
+            nito delete kraa permanently fir nhi krunga preshan
+            haa ho stay away from me jo bhi tha vo.
+        </p>
+
+        <div class="footer">— dil se likha hai</div>
+    </div>
+</div>
+
+</body>
+</html>
